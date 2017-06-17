@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body ng-app="dummyproject">
+
+
+<div ng-controller="userController">
+<input type="text" ng-model="uname">
+<input type="password" ng-model="upassword">
+<button ng-click="signUp()">SignUp</button>
+
+
+<label ng-show="showLoader">Please wait user is in creation ...</label>
+</div>
+
+project ka main page
+<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="controllers/usercontroller.js"></script>
+</body>
+</html>
