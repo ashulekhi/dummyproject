@@ -44,7 +44,7 @@ if(err){
 }
 console.log('connected')
 
-db.collection('users').findOne({username:req.query.username,password:req.query.password} , function(err,data){
+db.collection('users').insertOne(req.query , function(err,data){
 if(err){
 	return res.send('Error');
 }
